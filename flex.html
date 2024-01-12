@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+    <style>
+        .container{
+          display: flex;
+          gap: 10px;
+        }
+
+        .container2{
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+        }
+
+        .box{
+            border: 2px solid gray;
+            background-color: aqua;
+            margin-top: 10px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .item{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            border-radius: 5px;
+            margin-top: 10px;
+            align-items: center;
+            background-color: aquamarine;
+        }
+
+        @media screen and (max-width:876px) {
+            .container{
+                flex-direction: column;
+            }
+        }
+
+       @media screen and (max-width:876px) {
+            .container2{
+                flex-direction: column;
+            }
+       }
+    </style>
+</head>
+<body>
+    <h2>Responsive Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>first box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, consequuntur. Quidem similique laudantium dolores a perspiciatis vel veritatis, optio soluta quibusdam modi. Voluptates repellendus necessitatibus cumque praesentium, quisquam nisi, odit nihil, temporibus tempore aliquam libero? Nobis, ea, tempora et maiores neque ullam rerum beatae corporis vitae quas nisi, in porro.</p>
+        </div>
+        <div class="box">
+            <h3>second box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, consequuntur. Quidem similique laudantium dolores a perspiciatis vel veritatis, optio soluta quibusdam modi. Voluptates repellendus necessitatibus cumque praesentium, quisquam nisi, odit nihil, temporibus tempore aliquam libero? Nobis, ea, tempora et maiores neque ullam rerum beatae corporis vitae quas nisi, in porro.</p>
+        </div>
+        <div class="box">
+            <h3>third box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, consequuntur. Quidem similique laudantium dolores a perspiciatis vel veritatis, optio soluta quibusdam modi. Voluptates repellendus necessitatibus cumque praesentium, quisquam nisi, odit nihil, temporibus tempore aliquam libero? Nobis, ea, tempora et maiores neque ullam rerum beatae corporis vitae quas nisi, in porro.</p>
+        </div>
+        <div class="box">
+            <h3>fourth box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, consequuntur. Quidem similique laudantium dolores a perspiciatis vel veritatis, optio soluta quibusdam modi. Voluptates repellendus necessitatibus cumque praesentium, quisquam nisi, odit nihil, temporibus tempore aliquam libero? Nobis, ea, tempora et maiores neque ullam rerum beatae corporis vitae quas nisi, in porro.</p>
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <div class="item">item- 1</div>
+        <div class="item">item- 2</div>
+        <div class="item">item- 3</div>
+        <div class="item">item- 4</div>
+        <div class="item">item- 5</div>
+        <div class="item">item- 6</div>
+        <div class="item">item- 7</div>
+        <div class="item">item- 8</div>
+        <div class="item">item- 9</div>
+        <div class="item">item- 10</div>
+    </div>
+</body>
+</html>
